@@ -1,17 +1,12 @@
 import React, { useState, useEffect } from "react";
-
 import { postSmurf, updateSmurf } from "../actions/action";
-
 import { connect } from "react-redux";
 
 const SmurfForm = props => {
   const [smurf, setSmurf] = useState({
     name: "",
-
     age: "",
-
     height: "",
-
     id: Math.random() * 1000000000000
   });
 
@@ -30,11 +25,8 @@ const SmurfForm = props => {
 
     setSmurf({
       name: "",
-
       age: "",
-
       height: "",
-
       id: Math.random() * 100000000000
     });
   };
@@ -77,7 +69,6 @@ const SmurfForm = props => {
 const mapStateToProps = state => {
   return {
     smurfToEdit: state.smurfToEdit,
-
     isEditing: state.isEditing
   };
 };
