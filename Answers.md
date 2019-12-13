@@ -18,6 +18,6 @@ Application state is a state that is either in a context api or a store. This st
 ans
 Thunk is a term that describes returning a function inside a function. This allows us to turn a synchronous process into an asynchronous process. A good use of this is when you want a series of actions to run in a specific order. Without this, our action creators should run when they are declared.
 
-5.What is your favorite state management system you've learned and this sprint? Please explain why!
+5.What is your favorite state management system you've learned and this sprint? Please explain why!!
 
 I like using ReduxI for now because it involves much same type of code than implementing a complete react cycle. Its a good drill and hard to implement but good for big projects.
