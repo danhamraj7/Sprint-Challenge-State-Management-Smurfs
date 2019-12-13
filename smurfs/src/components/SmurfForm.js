@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { postSmurf, updateSmurf } from "../actions/action";
+import { updateSmurf } from "../actions/action"; //postSmurf,
 import { connect } from "react-redux";
 
 const SmurfForm = props => {
@@ -77,5 +77,5 @@ const mapStateToProps = state => {
 export default connect(
   mapStateToProps,
 
-  { postSmurf, updateSmurf }
+  {} //postSmurf//updateSmurf
 )(SmurfForm);
