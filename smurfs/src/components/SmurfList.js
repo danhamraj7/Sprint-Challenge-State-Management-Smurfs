@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
+
 import { getSmurfs } from "../actions/action";
+
 import { connect } from "react-redux";
+
 import Smurf from "./Smurf";
 
 const SmurfList = props => {
@@ -29,7 +32,9 @@ const SmurfList = props => {
 const mapStateToProps = state => {
   return {
     smurfs: state.smurfs,
+
     smurfToEdit: state.smurfToEdit,
+
     isEditing: state.isEditing
   };
 };
